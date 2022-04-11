@@ -7,7 +7,7 @@ class TicketsProcessor
       payments << Payment.new(value: ticket, type: 'Boleto')
     end
 
-    invoice.change_paid_status if invoice.value == sum
+    invoice.change_paid_status if sum >= invoice.value
 
     {
       invoice: invoice,
