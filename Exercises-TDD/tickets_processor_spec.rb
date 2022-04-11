@@ -2,7 +2,7 @@ describe TicketsProcessor do
   describe '#calculate' do
     context 'it receives the invoice and the tickets' do
       let(:service) { TicketsProcessor.new }
-      let(:invoice) { 1500 }
+      let(:invoice) { Invoice.new(value = 1500) }
       let(:tickets) { [500, 400, 600] }
 
       it 'returns invoice as paid and 3 payments of tickets created' do
