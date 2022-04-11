@@ -6,7 +6,7 @@ class Invoice
     @paid = false
   end
 
-  def paid
+  def change_paid_status
     @paid = true
   end
 end
