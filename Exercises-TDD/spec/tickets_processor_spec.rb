@@ -13,10 +13,10 @@ RSpec.describe TicketsProcessor do
       it 'returns invoice as paid and 3 payments of tickets created' do
         response = service.calculate(invoice: invoice, tickets: tickets)
         invoice = response[:invoice]
-        payments = response[:payments].count
+        payments_counter = response[:payments].count
 
         expect(invoice.paid).to eq(true)
-        expect(payments).to eq(3)
+        expect(payments_counter).to eq(3)
       end
     end
 
@@ -27,10 +27,10 @@ RSpec.describe TicketsProcessor do
       it 'returns invoice as paid and 3 payments of tickets created' do
         response = service.calculate(invoice: invoice, tickets: tickets)
         invoice = response[:invoice]
-        payments = response[:payments].count
+        payments_counter = response[:payments].count
 
         expect(invoice.paid).to eq(true)
-        expect(payments).to eq(3)
+        expect(payments_counter).to eq(3)
       end
     end
 
@@ -41,10 +41,10 @@ RSpec.describe TicketsProcessor do
       it 'returns invoice as not paid and 3 payments of tickets created' do
         response = service.calculate(invoice: invoice, tickets: tickets)
         invoice = response[:invoice]
-        payments = response[:payments].count
+        payments_counter = response[:payments].count
 
         expect(invoice.paid).to eq(false)
-        expect(payments).to eq(3)
+        expect(payments_counter).to eq(3)
       end
     end
   end
