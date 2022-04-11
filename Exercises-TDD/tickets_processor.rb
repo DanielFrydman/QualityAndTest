@@ -8,5 +8,10 @@ class TicketsProcessor
     end
 
     invoice.change_paid_status if invoice.value == sum
+
+    {
+      invoice: invoice,
+      payments: payments
+    }
   end
 end
