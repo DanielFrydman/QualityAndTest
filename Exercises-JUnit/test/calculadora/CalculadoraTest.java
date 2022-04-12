@@ -49,11 +49,5 @@ public class CalculadoraTest {
 		assertThrows(ArithmeticException.class,
 				() -> calc.divisao(8, 0));
 	}
-	
-	@Test
-	public void testSubtracaoDoisNumeros() {
-		int subtracao = calc.subtracao(5, 4);		
-		Assertions.assertEquals(1, subtracao);		
-	}
 
 }
