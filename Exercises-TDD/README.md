@@ -2,11 +2,17 @@ Foi criada a classe Invoice para a Fatura, a classe Payment para o Pagamento e a
 Para cada classe foi criado um teste.
 
 Como rodar:
+
 1- Instalar o Ruby: https://www.ruby-lang.org/pt/documentation/installation/
+
 2- Instalar as gems rspec(Para testes):
   a) gem install rspec
   b) gem install rspec-expectations
-3- Rodar os testes com: rspec ~caminho_do_arquivo~
+  
+3- Rodar os testes com: rspec (caminho_do_arquivo)
+![Captura de tela de 2022-04-11 20-50-20](https://user-images.githubusercontent.com/43658712/162852098-2fbb5c67-ae85-425c-b21b-9e15b31a4d33.png)
+![2](https://user-images.githubusercontent.com/43658712/162852109-c03e53df-4a1c-4bd7-9e22-c8710aa4cc61.png)
+![3](https://user-images.githubusercontent.com/43658712/162852133-690e43cc-e67e-48d6-b448-98d7c6a88df4.png)
 
 **Exercício:**
 
