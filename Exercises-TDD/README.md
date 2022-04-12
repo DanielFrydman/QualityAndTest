@@ -6,8 +6,8 @@ Como rodar:
 1- Instalar o Ruby: https://www.ruby-lang.org/pt/documentation/installation/
 
 2- Instalar as gems rspec(Para testes):
-  a) gem install rspec
-  b) gem install rspec-expectations
+* gem install rspec
+* gem install rspec-expectations
   
 3- Rodar os testes com: rspec (caminho_do_arquivo)
 ![2 (1)](https://user-images.githubusercontent.com/43658712/162855807-45db5882-c439-400f-a1e4-850799aff234.png)
