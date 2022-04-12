@@ -10,7 +10,7 @@ Como rodar:
   b) gem install rspec-expectations
   
 3- Rodar os testes com: rspec (caminho_do_arquivo)
-![Captura de tela de 2022-04-11 20-50-20](https://user-images.githubusercontent.com/43658712/162852098-2fbb5c67-ae85-425c-b21b-9e15b31a4d33.png)
+![2 (1)](https://user-images.githubusercontent.com/43658712/162855807-45db5882-c439-400f-a1e4-850799aff234.png)
 ![2](https://user-images.githubusercontent.com/43658712/162852109-c03e53df-4a1c-4bd7-9e22-c8710aa4cc61.png)
 ![3](https://user-images.githubusercontent.com/43658712/162852133-690e43cc-e67e-48d6-b448-98d7c6a88df4.png)
 
