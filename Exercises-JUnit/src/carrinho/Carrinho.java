@@ -43,5 +43,4 @@ public class Carrinho {
 		items.clear();
 	}
 	
-
 }

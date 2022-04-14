@@ -45,5 +45,53 @@ public class ProdutoTest {
 		assertThat(livro.getNome(), containsString("Teste"));
 		assertThat(livro, instanceOf(Produto.class));
 	}
+	
+	@Test
+	public void testDefinirPreco() {
+		livro.setPreco(50);
+		double preco = livro.getPreco();
+
+		Assertions.assertEquals(preco, 50);	
+	}
+	
+	@Test
+	public void testDefinirNome() {
+		livro.setNome("Teste de Software - Básico ao avançado");
+		String nome = livro.getNome();
+
+		Assertions.assertEquals(nome, "Teste de Software - Básico ao avançado");	
+	}
+	
+	@Test
+	public void testProdutosDiferentes() {
+		Produto livro2 = new Produto("Introdução ao Teste de Software", 90.00);
+		
+		Assertions.assertTrue(livro != livro2);
+	}
+	
+	@Test
+	public void testProdutosIdenticos() {
+		Produto livro2 = new Produto("Introdução ao Teste de Software", 100.00);
+		
+		Assertions.assertEquals(livro, livro2);
+	}
+	
+	@Test
+	public void testNomeDosProdutosIdenticos() {
+		Produto livro2 = new Produto("Introdução ao Teste de Software", 100.00);
+		String nome1 = livro.getNome();
+		String nome2 = livro2.getNome();
+		
+		Assertions.assertTrue(nome1 == nome2);
+	}
+	
+	@Test
+	public void testPrecoDosProdutosIdenticos() {
+		Produto livro2 = new Produto("Introdução ao Teste de Software", 100.00);
+		double preco1 = livro.getPreco();
+		double preco2 = livro2.getPreco();
+		
+		Assertions.assertTrue(preco1 == preco2);
+	}
 
 }
