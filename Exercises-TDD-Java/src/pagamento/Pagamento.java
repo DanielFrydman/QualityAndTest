@@ -15,4 +15,16 @@ public class Pagamento {
 		this.tipo = tipo;
 	}
 
+	public double getValor() {
+		return valor;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+	
+	public String getTipo() {
+		return tipo;
+	}
+
 }
