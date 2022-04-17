@@ -15,4 +15,16 @@ public class Boleto {
 		this.valorTotal = valorTotal;
 	}
 	
+	public int getCodigoDoBoleto() {
+		return codigoDoBoleto;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+
 }
