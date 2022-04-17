@@ -14,5 +14,5 @@ public class Pagamento {
 		this.data = data;
 		this.tipo = tipo;
 	}
-	
+
 }
