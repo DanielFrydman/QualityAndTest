@@ -30,4 +30,14 @@ public class ProcessadorDeBoletos {
 		return pagamentos.size();
 	}
 	
+	public double getValorTotalBoletos() {
+		ArrayList<Boleto> lista = getListaBoletos();
+		double valorTotal = 0;
+		for (int i = 0; i < getQuantidadeDeBoletos(); i++) {
+			Boleto boleto = lista.get(i);
+			valorTotal += boleto.getValorTotal();
+		}
+		return valorTotal;
+	}
+	
 }
