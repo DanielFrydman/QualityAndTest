@@ -58,4 +58,21 @@ public class ProcessadorDeBoletos {
 		return pagamentos;
 	}
 	
+	public double getValorFatura() {
+		return fatura.getValorTotal();
+	}
+	
+	public boolean getPagoFatura() {
+		return fatura.getPago();
+	}
+	
+	public void checarPagamento() {
+		double valorFatura = getValorFatura();
+		double valorBoletos = getValorTotalBoletos();
+		criarPagamentos();
+		if (valorBoletos >= valorFatura) {
+			fatura.setPagoTrue();
+		}
+	}
+	
 }

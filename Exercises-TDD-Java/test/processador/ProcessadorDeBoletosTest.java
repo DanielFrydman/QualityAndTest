@@ -88,16 +88,27 @@ public class ProcessadorDeBoletosTest {
 	@Test
 	public void testChecarPagamento() {
 		processador.criarPagamentos();
-		boolean pago = fatura.getPago();
+		ArrayList<Pagamento> array = processador.getListaPagamentos();
+		double valorTotalBoletos = processador.getValorTotalBoletos();
+		double valorFatura = processador.getValorFatura();
 
-		Assertions.assertEquals(pago, true);	
+		Assertions.assertEquals(valorFatura, 1500.00);
+		Assertions.assertEquals(valorTotalBoletos, 1500.00);
+		Assertions.assertEquals(array, arrayPagamentos);	
 	}
 	
 	@Test
-	public void testFaturaNaoPaga() {
-		boolean pago = fatura.getPago();
+	public void testGetPagoFatura() {
+		boolean pago = processador.getPagoFatura();
 
-		Assertions.assertEquals(pago, false);	
+		Assertions.assertEquals(pago, false);
+	}
+	
+	@Test
+	public void testGetValorFatura() {
+		double valorFatura = processador.getValorFatura();
+
+		Assertions.assertEquals(valorFatura, 1500.00);	
 	}
 	
 }
