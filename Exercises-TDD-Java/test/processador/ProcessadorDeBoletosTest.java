@@ -1,5 +1,6 @@
 package processador;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -22,14 +23,12 @@ public class ProcessadorDeBoletosTest {
 		boleto1 = new Boleto(218083115, new Date(), 500.00);
 		boleto2 = new Boleto(218083116, new Date(), 400.00);
 		boleto3 = new Boleto(218083117, new Date(), 600.00);
-		Boleto[] arrayBoletos;
-		arrayBoletos = new Boleto[3];
-		arrayBoletos[0] = boleto1;
-		arrayBoletos[1] = boleto2;
-		arrayBoletos[2] = boleto3;
+		ArrayList<Boleto> arrayBoletos = new ArrayList<Boleto>();
+		arrayBoletos.add(boleto1);
+		arrayBoletos.add(boleto2);
+		arrayBoletos.add(boleto3);
 		fatura = new Fatura("José", 1500.00, new Date());
-		Pagamento[] arrayPagamentos;
-		arrayPagamentos = new Pagamento[3];
+		ArrayList<Pagamento> arrayPagamentos  = new ArrayList<Pagamento>();
 		
 		processador = new ProcessadorDeBoletos(arrayBoletos, fatura, arrayPagamentos);
 	}
