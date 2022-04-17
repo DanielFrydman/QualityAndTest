@@ -42,6 +42,9 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testGetQuantidadeDeBoletos() {
+		int quantidadeDeBoletos = processador.getQuantidadeDeBoletos();
+
+		Assertions.assertEquals(quantidadeDeBoletos, 3);
 	}
 	
 	@Test
