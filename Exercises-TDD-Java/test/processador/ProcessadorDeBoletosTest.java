@@ -71,6 +71,15 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testAddPagamentoNaLista() {
+		Pagamento pagamento = new Pagamento(100.00, new Date(), "Boleto");
+		processador.addPagamentoNaLista(pagamento);
+		int quantidadeDePagamentos = processador.getQuantidadeDePagamentos();
+
+		Assertions.assertEquals(quantidadeDePagamentos, 1);
+	}
+	
+	@Test
+	public void testGetListaPagamento() {
 	}
 	
 	@Test
