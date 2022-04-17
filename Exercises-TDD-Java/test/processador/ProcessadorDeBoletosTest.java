@@ -87,6 +87,17 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testChecarPagamento() {
+		processador.criarPagamentos();
+		boolean pago = fatura.getPago();
+
+		Assertions.assertEquals(pago, true);	
+	}
+	
+	@Test
+	public void testFaturaNaoPaga() {
+		boolean pago = fatura.getPago();
+
+		Assertions.assertEquals(pago, false);	
 	}
 	
 }
