@@ -22,4 +22,8 @@ public class ProcessadorDeBoletos {
 		return boletos;
 	}
  
+	public int getQuantidadeDeBoletos() {
+		return boletos.size();
+	}
+	
 }
