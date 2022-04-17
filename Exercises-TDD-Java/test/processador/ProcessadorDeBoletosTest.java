@@ -63,6 +63,10 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testCriarPagamentos() {
+		processador.criarPagamentos();
+		int quantidadeDePagamentos = processador.getQuantidadeDePagamentos();
+
+		Assertions.assertEquals(quantidadeDePagamentos, 3);
 	}
 	
 	@Test
