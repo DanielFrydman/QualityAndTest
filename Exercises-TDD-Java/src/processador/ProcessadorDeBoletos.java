@@ -17,5 +17,9 @@ public class ProcessadorDeBoletos {
 		this.fatura = fatura;
 		this.pagamentos = pagamentos;
 	}
+	
+	public ArrayList<Boleto> getListaBoletos() {
+		return boletos;
+	}
  
 }
