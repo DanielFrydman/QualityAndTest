@@ -54,4 +54,8 @@ public class ProcessadorDeBoletos {
 		pagamentos.add(pagamento);
 	}
 	
+	public ArrayList<Pagamento> getListaPagamentos() {
+		return pagamentos;
+	}
+	
 }
