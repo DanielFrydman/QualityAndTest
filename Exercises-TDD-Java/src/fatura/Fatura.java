@@ -17,4 +17,24 @@ public class Fatura {
 		this.pago = false;
 	}
 	
+	public String getNome() {
+		return nomeCliente;
+	}
+	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+
+	public boolean getPago() {
+		return pago;
+	}
+	
+	public void setPagoTrue() {
+		this.pago = true;
+	}
+	
 }
