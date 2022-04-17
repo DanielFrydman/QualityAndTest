@@ -26,4 +26,8 @@ public class ProcessadorDeBoletos {
 		return boletos.size();
 	}
 	
+	public int getQuantidadeDePagamentos() {
+		return pagamentos.size();
+	}
+	
 }
