@@ -80,6 +80,9 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testGetListaPagamento() {
+		ArrayList<Pagamento> array = processador.getListaPagamentos();
+
+		Assertions.assertEquals(array, arrayPagamentos);	
 	}
 	
 	@Test
