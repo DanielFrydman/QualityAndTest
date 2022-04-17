@@ -56,6 +56,9 @@ public class ProcessadorDeBoletosTest {
 	
 	@Test
 	public void testGetValorTotalBoletos() {
+		double valorTotalBoletos = processador.getValorTotalBoletos();
+
+		Assertions.assertEquals(valorTotalBoletos, 1500.00);
 	}
 	
 	@Test
