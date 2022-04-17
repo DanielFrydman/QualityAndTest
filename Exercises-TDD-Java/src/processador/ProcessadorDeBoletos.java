@@ -1,6 +1,7 @@
 package processador;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 import boleto.Boleto;
 import fatura.Fatura;
@@ -38,6 +39,19 @@ public class ProcessadorDeBoletos {
 			valorTotal += boleto.getValorTotal();
 		}
 		return valorTotal;
+	}
+	
+	public void criarPagamentos() {
+		ArrayList<Boleto> lista = getListaBoletos();
+		for (int i = 0; i < getQuantidadeDeBoletos(); i++) {
+			Boleto boleto = lista.get(i);
+			Pagamento pagamento = new Pagamento(boleto.getValorTotal(), new Date(), "Boleto");
+			addPagamentoNaLista(pagamento);
+		}
+	}
+	
+	public void addPagamentoNaLista(Pagamento pagamento) {
+		pagamentos.add(pagamento);
 	}
 	
 }
